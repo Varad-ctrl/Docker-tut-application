@@ -8,7 +8,7 @@ const URL = process.env.BACKEND_URL || 'http://localhost:4000/api';
 
 app.get('/', async function (req, res) {
     try {
-        let response = await fetch(URL);   // ✅ direct fetch
+        let response = await fetch(URL); 
         response = await response.json();
 
         console.log(response);
